@@ -84,7 +84,7 @@ const Footer = () => {
       <div className="h-[2px] bg-gradient-to-r animate-gradient-x shadow-lg shadow-blue-500/20"></div>
 
       {/* Subtle Glow Effect */}
-      <div className="absolute inset-0 bg-gradient-to-t from-blue-500/5 via-transparent to-purple-500/5 pointer-events-none"></div>
+      <div className=""></div>
 
       {/* Main Content - True Full Width */}
       <div className="relative z-10 w-full flex flex-col md:flex-row justify-between gap-8 md:gap-4 px-0 py-1 mt-5">

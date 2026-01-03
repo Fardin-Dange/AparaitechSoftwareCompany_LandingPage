@@ -8,15 +8,20 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import Partners from "./components/Partners";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+
 import About from "./components/About";
+import Cloud from "./components/cloud";
+import Solutions from "./components/Solutions";
+import Careers from "./components/Careers";
+import Generative_AI from "./components/Generative_AI";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0a0a0f] text-white">
+    <div className="min-h-screen">
       <Header />
 
       <Routes>
-        {/* HOME PAGE */}
+        {/* HOME */}
         <Route
           path="/"
           element={
@@ -30,10 +35,15 @@ function App() {
           }
         />
 
-        {/* ABOUT PAGE */}
+        {/* OTHER PAGES */}
         <Route path="/about" element={<About />} />
+        <Route path="/cloud" element={<Cloud />} />
+        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/gen-ai" element={<Generative_AI />} />
       </Routes>
 
+      {/* Footer stays EXACTLY as it is */}
       <Footer />
     </div>
   );

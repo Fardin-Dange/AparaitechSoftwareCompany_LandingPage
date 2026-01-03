@@ -119,4 +119,4 @@ into impactful digital products.
   );
 };
 
-export default About;
+export default About
