@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,30 +9,26 @@
     @apply box-border;
   }
 
-  body {
-    @apply m-0 font-sans antialiased bg-[#0a0a0f] text-white overflow-x-hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
   html {
     scroll-behavior: smooth;
+
+    /* Firefox – hide scrollbar */
+    scrollbar-width: none;
   }
 
-  /* Custom scrollbar */
+  body {
+    @apply m-0 font-sans antialiased bg-[#f3eeff] text-[#2d1b69] overflow-x-hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* IE / Edge legacy */
+    -ms-overflow-style: none;
+  }
+
+  /* Chrome / Edge / Safari – hide scrollbar */
   ::-webkit-scrollbar {
-    @apply w-[10px];
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-[#0a0a0f];
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-[#7c3aed] to-[#4f46e5] rounded-[5px];
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply from-[#8b5cf6] to-[#6366f1];
+    width: 0px;
+    height: 0px;
+    display: none;
   }
 }
