@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const About = () => {
   return (
@@ -111,10 +111,10 @@ into impactful digital products.
         </motion.div>
       </div>
 
-      {/* Footer */}
+      {/* Footer
       <footer className="relative w-full">
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 };
